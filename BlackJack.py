@@ -1,5 +1,5 @@
 import random
-from Assets import blackjack
+from Assets import project_logos
 
 def deal_card():
     cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
@@ -30,7 +30,7 @@ def compare(u_scores,c_scores):
         return "Computer wins!"
 
 def game():
-    print(blackjack.logo)
+    print(project_logos.blackjack)
     user_cards = [deal_card() for _ in range(2)]
     computer_cards = [deal_card() for _ in range(2)]
     is_game_over = False

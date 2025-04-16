@@ -1,4 +1,4 @@
-from Assets import calculator_art
+from Assets import project_logos
 
 def add(n1, n2):
     return n1 + n2
@@ -21,7 +21,7 @@ operations = {
 
 #Start of the program
 def calculator():
-    print(calculator_art.logo)
+    print(project_logos.calculator)
     continue_calc = True
 
     n1 = float(input("What is the first number? "))

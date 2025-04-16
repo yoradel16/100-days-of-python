@@ -1,9 +1,9 @@
 import random
-from Assets import hangman_art, hangman_words
+from Assets import project_logos, hangman_words
 
 lives = 6
 
-print(hangman_art.logo)
+print(project_logos.hangman_logo)
 
 chosen_word = random.choice(hangman_words.word_list)
 # print(chosen_word)
@@ -52,4 +52,4 @@ while not game_over:
         game_over = True
         print("****************************YOU WIN****************************")
 
-    print(hangman_art.stages[lives])
+    print(project_logos.hangman_stages[lives])

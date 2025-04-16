@@ -1,9 +1,4 @@
-# TODO-1: Ask the user for input
-# TODO-2: Save data into dictionary {name: price}
-# TODO-3: Whether if new bids need to be added
-# TODO-4: Compare bids in dictionary
-
-from Assets import blind_auction
+from Assets import project_logos
 def highest_bidder(bids):
     bidder = max(bids, key=bids.get)
     print("\n" * 20)
@@ -11,7 +6,7 @@ def highest_bidder(bids):
 
 bids = {}
 continue_bidding = True
-print(blind_auction.logo)
+print(project_logos.blind_auction)
 while continue_bidding:
     name = input("What is your name?: ").capitalize()
     bid = int(input("What is your bid?: $"))
